@@ -1,14 +1,11 @@
 import gearman
+import json
+
 d = {'nama': 'roland',
         'alamat': 'krapyak coret',
         'notelp': '303030303',
         'status': 'feeling blue'
         }
-
-
-import json
-
-#print type(json.dumps(d))
 
 new_client = gearman.GearmanClient(['127.0.0.1'])
 print 'sending data'

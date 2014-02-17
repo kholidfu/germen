@@ -12,8 +12,8 @@ import json
 
 def insert_dbase(gearman_worker, gearman_job):
     print 'inserting dbase'
-    c = pymongo.Connection()
-    db = c["ganapatih"]
+    #c = pymongo.Connection()
+    #db = c["ganapatih"]
 
     print json.loads(json.dumps(gearman_job.data))
     db.panics.insert(json.loads(gearman_job.data))
